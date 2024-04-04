@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(img/ima.jpeg);
+    background-size: cover;
+}    
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+}
+
+
+form {
+background-color: #ffffff;
+padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333333;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #555555;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        main {
+            margin: 250px auto;
+            width: 80%;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Combinar bordes de celdas */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            margin-bottom: 20px;
+        }
+        
+        .encabezado {
+            background-color: #add8e6;
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+        
+        .encabezado:hover {
+            color: black;
+        }
+        
+        .columnas {
+            background-color: #ddd;
+            color: black;
+            padding: 15px;
+            text-align: left;
+        }
+        
+        td, th {
+            padding: 50px;
+            text-align: left;
+            border-bottom: 1px solid #ddd; /* Bordes entre filas */
+        }
+        
+        tr:hover {
+            background-color: #f5f5f5;
+            cursor: pointer;
+        }
+        
+        th {
+            background-color: #3498db; /* Color de fondo para las celdas de encabezado */
+            color: white;
+            font-weight: bold;
+        }
+/*hedersup*/
+.heder__superior{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+    padding: 20px;
+
+}
+
+.logo img{
+    width: 200px;
+}
+
+.cerrar_sesion a[href="cerrar_sesion.php"] {
+    background-color: #9191bd;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+    text-decoration: none;
+}
+.cerrar_sesion a[href="cerrar_sesion.php"]:hover{
+    background-color: #fff;
+    color:  #9191bd;
+}
+
+/*barra menú*/
+
+.container__menu{
+    width: 100%;
+    height: 70px;
+    background: papayawhip;
+    padding: 0px 20px;
+
+}
+
+.menu{
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+   
+}
+
+nav{
+    height: 100%;
+}    
+
+nav > ul{
+    height: 100%;
+    display:flex;    
+}
+
+nav > ul > li:first-child > a{
+    background-image: url(img/casa.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20px 40px;
+}
+
+nav > ul > li:first-child:hover>a{
+    background-image: url(/img/casa.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+nav > ul > li{
+    height: 100%;
+    list-style: none;
+    position: relative;
+}
+
+nav > ul > li>a{
+width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+padding: 14px;
+text-transform: uppercase;
+font-size: 14px;
+transition: all 300ms ease;
+
+}
+nav > ul > li>a:hover{
+    transform: scale(1.1);
+    background: #9191bd;
+    color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .15);
+}
+
+#selected{
+    transform: scale(1.1);
+    background-color: #9191bd;
+    color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .15);  
+}
+/*elementos responsivos*/
+.icon__menu{
+    font-size: 26px;
+    color: #fff;
+    cursor: pointer;
+    width: 26px;
+    height: 100%;
+    display: none;
+    align-items: center;  
+}
+
+#check__menu{
+    display: none;
+}
+
+#label__check{
+    width: 26px;
+    height: 100%;
+    display: none;
+}
+
+
+
+/* Estilos del botón de cerrar sesión */
+#logout {
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+@media(max-width:720px) {
+    
+    .heder__superior{
+    padding: 10px;
+    }
+    .logo img{
+        width: 200px;   
+    }
+
+    nav > ul{
+        flex-direction: column;
+        background-color: #9191bd;
+        position: fixed;
+        left: 0;
+        top: 158px;
+        width: 100%;
+        height: 0px;
+        transition: all 300ms ease;
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+    }
+    nav > ul > li > a:hover{
+        transform: scale(1);
+    }
+
+    nav > ul > li:first-child a{
+       background-position: 20px;  
+    }     
+    #selected{
+        transform: scale(1);
+    }
+    #label__check{
+        display: block;
+    }
+    .icon__menu{
+        display: flex;
+    }
+
+    #check__menu:checked ~ nav > ul{
+        height: 300px;
+        visibility: visible;
+        opacity: 1;
+    }
+}
